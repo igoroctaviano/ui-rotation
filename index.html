@@ -5,6 +5,7 @@
     <title>Igor Octaviano</title>
 
     <!-- Styles -->
+    <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
 
     <!-- Fonts -->
@@ -13,40 +14,40 @@
 </head>
 <body>
     
-    <header class="about">
-        <h2>Olá, sou</h2>
-        <h1 class="fancy"><span>IGOR/OCTAVIANO.</span></h1>
+    <header class="about flex-center">
+        <p class="about-subtitle">Olá, sou</p>
+        <p class="about-title fancy"><span>IGOR/OCTAVIANO.</span></p>
     </header>
 
     <main>
         <div class="separator">
-            <p class="fancy gray-border"><span>O que eu tenho feito até então.</span></p>
+            <p class="fancy dark"><span>O que eu tenho feito até então.</span></p>
         </div>
 
         <section class="experiences">
             <div class="card">
-               <img class="card-image" alt="Logo">
-               <div class="card-info">           
-                  <h1>Avenue Code</h1>
-                  <h2>Software Development Intern</h2>
+               <img class="card-image">
+               <div class="card-header">           
+                  <p class="card-title">Avenue Code</p>
+                  <p class="card-position">Software Development Intern</p>
                   <p class="card-location">Belo Horizonte, MG</p>
                   <p class="card-description">Multidisciplinary internship program, acting on three pillars of Information Technology: Development Front-End and Back-End (Java, .Net, Ruby, UI frameworks); Quality Assurance (manual and automated tests) and DevOps (DevOps and Continuous Integration).</p>
                </div>
             </div>
             <div class="card">
-                <img class="card-image" alt="Logo">
-                <div class="card-info">
-                    <h1>Pontifícia Universidade Católica de Minas Gerais</h1>
-                    <h2>Monitor Acadêmico em Programação Modular</h2>
+                <img class="card-image">
+                <div class="card-header">
+                    <p class="card-title">Pontifícia Universidade Católica de Minas Gerais</p>
+                    <p class="card-position">Monitor Acadêmico em Programação Modular</p>
                     <p class="card-location">Belo Horizonte, MG</p>
                     <p class="card-description">Periodicamente ao longo do semestre, alunos que estão com dificuldades acadêmicas são contatados por um monitor acadêmico. Conferências podem ser organizadas entre alunos e monitores para discutir o progresso acadêmico e determinar estratégias de intervenção.</p>
                 </div>
             </div>
             <div class="card">
-                <img class="card-image" alt="Logo">
-                <div class="card-info">
-                    <h1>Microsoft Innovation Center</h1>
-                    <h2>Técnico Residente</h2>
+                <img class="card-image">
+                <div class="card-header">
+                    <p class="card-title">Microsoft Innovation Center</p>
+                    <p class="card-position">Técnico Residente</p>
                     <p class="card-location">Belo Horizonte, MG</p>
                     <p class="card-description">Atividades de formação técnica e desenvolvimento prático de projetos inovadores.
 
@@ -55,10 +56,26 @@
                 </div>
             </div>
         </section>
-
+        
         <div class="separator">
-            <p class="fancy gray-border"><span>Sou Mineiro, <br> ando de serra em serra, <br> sou trilheiro de coração.</span></p>
-            <p class="contact-sub">Vamos entrar em contato.</p>
+            <p class="fancy dark"><span>O que tem grande valor.</span></p>
+        </div>
+
+        <section class="my-sistem flexcenter">
+            <p class="my-system-title">Meu sistema</p>
+            <p>Buscar aprendizagem.<br>
+            Cativar à todos.<br>
+            Ser criativo, amável, sistemático e faminto.<br>
+            Abrir as cortinas antes de dormir.<br>
+            Ivestir em ideias significativas.<br>
+            Não ser sério demais, usar a paciência. <br>
+            Ler todos os dias, ler mais ainda. <br>
+            Ter o meu tempo, mais procurar sempre adiantá-lo.</p> 
+        </section>
+        
+        <div class="separator">
+            <p class="fancy dark"><span>Sou Mineiro, <br> ando de serra em serra, <br> trilheiro de coração.</span></p>
+            <p class="contact-subtitle">Vamos entrar em contato.</p>
         </div>
 
         <div class="contact">
@@ -70,7 +87,7 @@
         </div>
     </main>
     
-    <footer>
+    <footer class="flex-center">
         <p>Criado com s2 utilizando HTML e CSS</p>
     </footer>
 
