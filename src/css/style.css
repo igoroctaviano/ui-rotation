@@ -6,8 +6,41 @@
 /* Generic Selectors 
 ----------------------------- */
 body {
-    color: darkslategrey;,    
     font-family: 'Open Sans', serif;
+    font-size: 16px;
+
+    line-height: 1.2;
+    color: darkslategrey;
+    font-family: 'Fairview Regular', serif;
+    letter-spacing: 2px;
+}
+
+header {
+    z-index: 999;
+    background-color: #1e2133;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+}
+header p {
+    margin: 0px;
+}
+.logo {
+    padding-top: 20px;
+    padding-left: 30px;
+
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 0px black, 0px 1px #1f1f1f,
+                 2px 1px black, 1px 2px #1f1f1f,
+                 3px 2px black, 2px 3px #1f1f1f,
+                 4px 3px black, 3px 4px #1f1f1f,
+                 5px 4px black, 4px 5px #1f1f1f,
+                 6px 5px black, 5px 6px #1f1f1f,
+                 7px 6px black, 6px 7px #1f1f1f,
+                 8px 7px black, 7px 8px #1f1f1f,
+                 8px 8px black;
 }
 
 /* About Section 
@@ -15,17 +48,20 @@ body {
 .about {
     color: white;
     height: 100vh;
+
     background-image: url("../img/walle.jpg");
     background-attachment: fixed;
 }
 .about-subtitle {
-    margin: 0px;
+    margin: 0;
+
     font-size: 26px;
     font-style: italic;
     font-family: 'Open Sans', serif;
 }
 .about-title {
     margin: 60px;
+
     font-size: 86px;
     font-weight: bold;
     font-family: 'Fairview Regular', serif;
@@ -34,14 +70,14 @@ body {
 /* My System Section
 ----------------------------- */
 .my-sistem {
-    width: 100%;
+    width:  100%;
     height: 100vh;
 
     font-size: 46px;
     font-weight: bold;
     font-family: 'Fairview Regular', serif;
 
-    color: white;
+    color:      white;
     text-align: center;
     letter-spacing: 3.3px;
 
@@ -49,22 +85,22 @@ body {
     background-attachment: fixed;
 }
 .my-system-title {
-    font-style: italic;
+    font-style:  italic;
     font-weight: normal;
     font-size: 26px;
     font-family: 'Raleway', serif;
 }
 
 .flex-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display:         flex;
+    flex-direction:  column;
+    align-items:     center;
     justify-content: center;
 }
 .flex-center-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display:         flex;
+    flex-direction:  row;
+    align-items:     center;
     justify-content: center;
 }
 
@@ -76,7 +112,7 @@ body {
 }
 .contact-subtitle {
     color: steelblue;
-    margin: 0px;
+    margin: 0;
     
     font-size: 20px;
     font-style: italic;
@@ -84,43 +120,38 @@ body {
 }
 .squared-160x-170x {
     background-size: 160px, 170px;
-    height: 160px;
-    width: 170px;
+    height:          160px;
+    width:           170px;
 }
 
 /* Experiences Section
 ----------------------------- */
 .experiences {
-    margin-left: 170px;
-    margin-right: 170px;
-    padding: 10px;
+    margin: 0 170px 0 170px;
+    padding:   10px;
 }
 
 /* Experience Card 
 ----------------------------- */
 .card {
-    display: flex;
+    display:        flex;
     flex-direction: row;
 
     margin: 30px;
+    font-weight: bold;
 }
 .card * {
     margin: 8px;
 }
-.card-header {
-    font-size: 15px;
-}
 .card-image {
-    flex-shrink: 0;
+    flex-shrink:   0;
     border-radius: 35px;
-    margin-right: 43px;
     
-    width: 300px;
+    width:  300px;
     height: 220px;
 
     background-color: #EAEAEA;
-    background-size: 700px 700px;
-    background-repeat: no-repeat;
+    background-size:    700px 700px;
     background-position: 40px, 40px;
 }
 .card-title {
@@ -132,61 +163,46 @@ body {
 .card-description {
     display: inline-block;
     margin-top: 15px;
-    line-height: 1.5;
+    font-weight: normal;
 }
 .card-position {
     color: forestgreen;
-    font-size: 16px;
-}
-.card-position, .card-location {
-    font-weight: bold;
 }
 
 /* Separator
 ----------------------------- */
 .separator {
-    margin: 20px;
+    margin: 30px;
     font-family: 'Raleway', serif;
     font-size: 36px;
-}
-.separator-title {
-    padding: 10px;
-}
-.separator p {
-    line-height: 1.2;
 }
 
 /* Line-On-Sides Header 
 (CSS Tricks customization) 
 ----------------------------- */
 .fancy {
-  line-height: 0;
-  text-align: center;
+    line-height: 0;
+    text-align: center;
 }
 .fancy span {
-  display: inline-block;
-  position: relative;  
+    display: inline-block;
+    position: relative;
 }
 .fancy span:before,
 .fancy span:after {
-  top: 0;
-  content: "";
-  position: absolute;
-  border-bottom: 2px solid white;
+    top: 0;
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid white;
     
-  height: 5px;
-  width: 80px;
+    height: 5px;
+    width: 80px;
 }
 .fancy span:before {
-  right: 100%;
-  margin-right: 15px;
+    right: 100%;
+    margin-right: 15px;
 }
 .fancy span:after {
-  left: 100%;
-  margin-left: 15px;
-}
-.dark span:before, .dark span:after {
-    height: 25px;
-    width: 65px;
-    border-bottom: 2px solid darkslategrey;
+    left: 100%;
+    margin-left: 15px;
 }
