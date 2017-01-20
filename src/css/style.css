@@ -5,9 +5,6 @@
 
 /* Generic Selectors 
 ----------------------------- */
-html {
-    position: relative;
-} 
 body {
     color: darkslategrey;,    
     font-family: 'Open Sans', serif;
@@ -18,47 +15,36 @@ body {
 .about {
     color: white;
     height: 100vh;
-    
     background-image: url("../img/walle.jpg");
-    background-position: -60px -150px;
     background-attachment: fixed;
 }
 .about-subtitle {
+    margin: 0px;
     font-size: 26px;
     font-style: italic;
     font-family: 'Open Sans', serif;
-    
-    margin-bottom: 60px;
 }
 .about-title {
+    margin: 60px;
     font-size: 86px;
-    font-family: 'Fairview Regular', serif;
     font-weight: bold;
-}
-
-/* Experiences Section
------------------------------ */
-.experiences {
-    margin-left: 350px;
-    margin-right: 350px;
-    
-    padding: 30px;
+    font-family: 'Fairview Regular', serif;
 }
 
 /* My System Section
 ----------------------------- */
 .my-sistem {
     width: 100%;
-    height: 600px;
-    
+    height: 100vh;
+
     font-size: 46px;
     font-weight: bold;
     font-family: 'Fairview Regular', serif;
-    
+
     color: white;
     text-align: center;
     letter-spacing: 3.3px;
-    
+
     background-image: url("../img/what-i-value.jpg");
     background-attachment: fixed;
 }
@@ -67,8 +53,6 @@ body {
     font-weight: normal;
     font-size: 26px;
     font-family: 'Raleway', serif;
-    
-    margin-bottom: 50px;
 }
 
 .flex-center {
@@ -77,48 +61,39 @@ body {
     align-items: center;
     justify-content: center;
 }
-
-footer {
-    width: 100%;
-    height: 80px;
-    
-    color: darkslategrey;
-    position: absolute;
-    text-align: center;
-    font-weight: bold;
-    background-color: cyan;
+.flex-center-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Contact Section
 ----------------------------- */
 .contact {
-    display: flex;
-    flex-direction: row;
-    
+    margin-bottom: 200px;
     text-align: center;
 }
 .contact-subtitle {
-    padding: 40px;
     color: steelblue;
+    margin: 0px;
     
     font-size: 20px;
     font-style: italic;
     font-family: 'Open Sans', serif;
 }
-.contact .twitter {
-    background-image: url("../img/twitter.jpg");
+.squared-160x-170x {
+    background-size: 160px, 170px;
+    height: 160px;
+    width: 170px;
 }
-.contact .email {
-    background-image: url("../img/email.jpg");
-}
-.contact .pen {
-    background-image: url("../img/pen.webp");
-}
-.contact .github {
-    background-image: url("../img/github.jpg");
-}
-.contact .linkedin {
-    background-image: url("../img/linkedin.jpg"); 
+
+/* Experiences Section
+----------------------------- */
+.experiences {
+    margin-left: 170px;
+    margin-right: 170px;
+    padding: 10px;
 }
 
 /* Experience Card 
@@ -126,7 +101,11 @@ footer {
 .card {
     display: flex;
     flex-direction: row;
-    margin-bottom: 35px;
+
+    margin: 30px;
+}
+.card * {
+    margin: 8px;
 }
 .card-header {
     font-size: 15px;
@@ -134,27 +113,25 @@ footer {
 .card-image {
     flex-shrink: 0;
     border-radius: 35px;
+    margin-right: 43px;
     
     width: 300px;
     height: 220px;
-    
-    background-color: #EAEAEA; 
-    background-image: url("../img/ac.svg");
+
+    background-color: #EAEAEA;
     background-size: 700px 700px;
     background-repeat: no-repeat;
     background-position: 40px, 40px;
-    
-    margin-right: 45px;
-    margin-bottom: 20px;
 }
 .card-title {
+    color: #3b73d8;
+
     font-size: 24px;
     font-weight: normal;
-    
-    color: #3b73d8;
 }
 .card-description {
-    margin-top: 30px;
+    display: inline-block;
+    margin-top: 15px;
     line-height: 1.5;
 }
 .card-position {
@@ -164,22 +141,19 @@ footer {
 .card-position, .card-location {
     font-weight: bold;
 }
-.card-position, .card-location, .card-title {
-    margin-top: 13px;
-}
 
+/* Separator
+----------------------------- */
 .separator {
+    margin: 20px;
     font-family: 'Raleway', serif;
-    width: 100%;
-    text-align: center;
     font-size: 36px;
-    
-    margin-top: 80px;
-    margin-bottom: 70px;
+}
+.separator-title {
+    padding: 10px;
 }
 .separator p {
     line-height: 1.2;
-    margin: 0px;
 }
 
 /* Line-On-Sides Header 
@@ -212,7 +186,7 @@ footer {
   margin-left: 15px;
 }
 .dark span:before, .dark span:after {
-    border-bottom: 2px solid darkslategrey;
     height: 25px;
     width: 65px;
+    border-bottom: 2px solid darkslategrey;
 }
