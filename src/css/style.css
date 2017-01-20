@@ -1,157 +1,164 @@
-@import url("reset.css");
-
 @font-face {
   font-family: 'Fairview Regular';
   src: url('../fonts/Fairview_Regular.otf') format('opentype');
 }
 
-html {
-    position: relative;
-}
-
+/* Generic Selectors 
+----------------------------- */
 body {
+    color: darkslategrey;,    
     font-family: 'Open Sans', serif;
-    color: darkslategrey;
 }
 
-.experiences {
-    margin-left: 350px;
-    margin-right: 350px;
-    padding: 30px;
-}
-
-/* About Section */
+/* About Section 
+----------------------------- */
 .about {
     color: white;
-    background-image: url("../img/walle.jpg");
-    background-position: -60px -150px;
-    background-attachment: fixed;
     height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-image: url("../img/walle.jpg");
+    background-attachment: fixed;
 }
-header h2 {
+.about-subtitle {
+    margin: 0px;
     font-size: 26px;
     font-style: italic;
     font-family: 'Open Sans', serif;
-    margin-bottom: 60px;
 }
-header h1 {
+.about-title {
+    margin: 60px;
     font-size: 86px;
+    font-weight: bold;
     font-family: 'Fairview Regular', serif;
-    font-weight: bold;
 }
-.contact {
+
+/* My System Section
+----------------------------- */
+.my-sistem {
+    width: 100%;
+    height: 100vh;
+
+    font-size: 46px;
+    font-weight: bold;
+    font-family: 'Fairview Regular', serif;
+
+    color: white;
     text-align: center;
-}
+    letter-spacing: 3.3px;
 
-.title {
-    font-weight: bold;
-    font-size: 20px;
+    background-image: url("../img/what-i-value.jpg");
+    background-attachment: fixed;
 }
-
-.separator {
+.my-system-title {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 26px;
     font-family: 'Raleway', serif;
-    margin-top: 80px;
-    margin-bottom: 70px;
-    width: 100%;
-    text-align: center;
-    font-size: 36px;
-}
-.separator p {
-    line-height: 1.2;
-    margin: 0px;
 }
 
-footer {
-    color: darkslategrey;
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    text-align: center;
-    background-color: cyan;
-    font-weight: bold;
-
+.flex-center {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
-.contact {
+.flex-center-row {
     display: flex;
     flex-direction: row;
-}
-.contact-sub {
-    padding: 40px;
-    font-style: italic;
-    color: steelblue;
-    font-size: 20px;
-    font-family: 'Open Sans', serif;
-}
-.contact .twitter {
-    background-image: url("../img/twitter.jpg");
-}
-.contact .email {
-    background-image: url("../img/email.jpg");
-}
-.contact .pen {
-    background-image: url("../img/pen.webp");
-}
-.contact .github {
-    background-image: url("../img/github.jpg");
-}
-.contact .linkedin {
-    background-image: url("../img/linkedin.jpg");
-    
+    align-items: center;
+    justify-content: center;
 }
 
-/* Experience Card */
+/* Contact Section
+----------------------------- */
+.contact {
+    margin-bottom: 200px;
+    text-align: center;
+}
+.contact-subtitle {
+    color: steelblue;
+    margin: 0px;
+    
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Open Sans', serif;
+}
+.squared-160x-170x {
+    background-size: 160px, 170px;
+    height: 160px;
+    width: 170px;
+}
+
+/* Experiences Section
+----------------------------- */
+.experiences {
+    margin-left: 170px;
+    margin-right: 170px;
+    padding: 10px;
+}
+
+/* Experience Card 
+----------------------------- */
 .card {
     display: flex;
     flex-direction: row;
-    margin-bottom: 35px;
+
+    margin: 30px;
 }
-.card-info {
+.card * {
+    margin: 8px;
+}
+.card-header {
     font-size: 15px;
 }
 .card-image {
     flex-shrink: 0;
     border-radius: 35px;
+    margin-right: 43px;
+    
     width: 300px;
     height: 220px;
-    background-color: lightgray;
-    background-image: url("../img/ac.png");
-    background-size: 210px 210px;
+
+    background-color: #EAEAEA;
+    background-size: 700px 700px;
     background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 45px;
-    margin-bottom: 20px;
+    background-position: 40px, 40px;
 }
-.card-info h1 {
+.card-title {
+    color: #3b73d8;
+
     font-size: 24px;
     font-weight: normal;
-    color: #3b73d8;
 }
 .card-description {
-    margin-top: 30px;
+    display: inline-block;
+    margin-top: 15px;
     line-height: 1.5;
 }
-.card-info h2 {
+.card-position {
     color: forestgreen;
     font-size: 16px;
 }
-.card-info h2, .card-location {
+.card-position, .card-location {
     font-weight: bold;
 }
-.card-info h2, .card-location, .card-title {
-    margin-top: 13px;
+
+/* Separator
+----------------------------- */
+.separator {
+    margin: 20px;
+    font-family: 'Raleway', serif;
+    font-size: 36px;
+}
+.separator-title {
+    padding: 10px;
+}
+.separator p {
+    line-height: 1.2;
 }
 
-/* Line-On-Sides Header (CSS Tricks customization) */
+/* Line-On-Sides Header 
+(CSS Tricks customization) 
+----------------------------- */
 .fancy {
   line-height: 0;
   text-align: center;
@@ -162,11 +169,12 @@ footer {
 }
 .fancy span:before,
 .fancy span:after {
+  top: 0;
   content: "";
   position: absolute;
-  height: 5px;
   border-bottom: 2px solid white;
-  top: 0;
+    
+  height: 5px;
   width: 80px;
 }
 .fancy span:before {
@@ -177,9 +185,8 @@ footer {
   left: 100%;
   margin-left: 15px;
 }
-
-.gray-border span:before, .gray-border span:after {
-    border-bottom: 2px solid darkslategrey;
+.dark span:before, .dark span:after {
     height: 25px;
     width: 65px;
+    border-bottom: 2px solid darkslategrey;
 }

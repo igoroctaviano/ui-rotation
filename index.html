@@ -5,6 +5,8 @@
     <title>Igor Octaviano</title>
 
     <!-- Styles -->
+    <!-- <link rel="stylesheet" href="src/css/reset.css"> -->
+    <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="src/css/style.css">
 
     <!-- Fonts -->
@@ -13,40 +15,40 @@
 </head>
 <body>
     
-    <header class="about">
-        <h2>Olá, sou</h2>
-        <h1 class="fancy"><span>IGOR/OCTAVIANO.</span></h1>
+    <header class="about flex-center">
+        <p class="about-subtitle">Olá, sou</p>
+        <p class="about-title fancy"><span>IGOR/OCTAVIANO.</span></p>
     </header>
 
     <main>
         <div class="separator">
-            <p class="fancy gray-border"><span>O que eu tenho feito até então.</span></p>
+            <p class="fancy dark"><span>O que eu tenho feito até então.</span></p>
         </div>
 
         <section class="experiences">
             <div class="card">
-               <img class="card-image" alt="Logo">
-               <div class="card-info">           
-                  <h1>Avenue Code</h1>
-                  <h2>Software Development Intern</h2>
+               <img class="card-image" src="src/img/ac.svg">
+               <div class="card-header">           
+                  <p class="card-title">Avenue Code</p>
+                  <p class="card-position">Software Development Intern</p>
                   <p class="card-location">Belo Horizonte, MG</p>
                   <p class="card-description">Multidisciplinary internship program, acting on three pillars of Information Technology: Development Front-End and Back-End (Java, .Net, Ruby, UI frameworks); Quality Assurance (manual and automated tests) and DevOps (DevOps and Continuous Integration).</p>
                </div>
             </div>
             <div class="card">
-                <img class="card-image" alt="Logo">
-                <div class="card-info">
-                    <h1>Pontifícia Universidade Católica de Minas Gerais</h1>
-                    <h2>Monitor Acadêmico em Programação Modular</h2>
+                <img class="card-image" src="src/img/puc.png">
+                <div class="card-header">
+                    <p class="card-title">Pontifícia Universidade Católica de Minas Gerais</p>
+                    <p class="card-position">Monitor Acadêmico em Programação Modular</p>
                     <p class="card-location">Belo Horizonte, MG</p>
                     <p class="card-description">Periodicamente ao longo do semestre, alunos que estão com dificuldades acadêmicas são contatados por um monitor acadêmico. Conferências podem ser organizadas entre alunos e monitores para discutir o progresso acadêmico e determinar estratégias de intervenção.</p>
                 </div>
             </div>
             <div class="card">
-                <img class="card-image" alt="Logo">
-                <div class="card-info">
-                    <h1>Microsoft Innovation Center</h1>
-                    <h2>Técnico Residente</h2>
+                <img class="card-image" src="src/img/mic.jpg">
+                <div class="card-header">
+                    <p class="card-title">Microsoft Innovation Center</p>
+                    <p class="card-position">Técnico Residente</p>
                     <p class="card-location">Belo Horizonte, MG</p>
                     <p class="card-description">Atividades de formação técnica e desenvolvimento prático de projetos inovadores.
 
@@ -55,24 +57,35 @@
                 </div>
             </div>
         </section>
-
+        
         <div class="separator">
-            <p class="fancy gray-border"><span>Sou Mineiro, <br> ando de serra em serra, <br> sou trilheiro de coração.</span></p>
-            <p class="contact-sub">Vamos entrar em contato.</p>
+            <p class="fancy dark"><span>O que tem grande valor.</span></p>
         </div>
 
-        <div class="contact">
-            <img class="twitter" alt="Twitter icon">
-            <img class="email" alt="Email icon">  
-            <img class="pen" alt="Pen icon">
-            <img class="github" alt="Github icon">
-            <img class="linkedin" alt="Linkedin icon">
+        <section class="my-sistem flex-center">
+            <p class="my-system-title">Meu sistema</p>
+            <p>Sempre buscar aprender.<br>
+            Trabalhar junto, construir ideias e cativar à todos.<br>
+            Expressar o que é criativo, desenvolver o eu sistemático.<br>
+            Abrir as cortinas antes de dormir.<br>
+            Não ser sério demais, usar a paciência. <br>
+            Ler todos os dias, ler ainda mais. <br>
+            Ter o meu tempo, mais quando preciso, procurar adiantá-lo.</p>
+        </section>
+        
+        <div class="separator flex-center">
+            <p class="separator-title fancy dark"><span>Sou Mineiro, desenvolvedor e trilheiro nas horas vagas.</span></p>
+            <p class="contact-subtitle">Vamos entrar em contato.</p>
+        </div>
+
+        <div class="contact flex-center-row">
+            <a href="http://www.twitter.com/igoroctaviano"><img class="twitter squared-160x-170x" src="src/img/twitter.jpg"></a>
+            <a href="http://www.gmail.com"><img class="email squared-160x-170x" src="src/img/email.jpg"></a>
+            <a href="http://www.google.com"><img class="pen squared-160x-170x" src="src/img/pen.png"></a>
+            <a href="http://www.github.com/igoroctaviano"><img class="github squared-160x-170x" src="src/img/github.jpg"></a>
+            <a href="http://www.linkedin/in/igoroctaviano"><img class="linkedin squared-160x-170x" src="src/img/linkedin.jpg"></a>
         </div>
     </main>
-    
-    <footer>
-        <p>Criado com s2 utilizando HTML e CSS</p>
-    </footer>
 
 </body>
 </html>
