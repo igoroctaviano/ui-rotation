@@ -3,7 +3,7 @@
   src: url('../fonts/Fairview_Regular.otf') format('opentype');
 }
 
-/* Generic Selectors 
+/* Generic Selectors
 ----------------------------- */
 body {
     font-family: 'Open Sans', serif;
@@ -11,16 +11,19 @@ body {
 
     line-height: 1.2;
     color: darkslategrey;
-    font-family: 'Fairview Regular', serif;
     letter-spacing: 2px;
 }
 
+/* Header
+----------------------------- */
 header {
-    z-index: 999;
-    background-color: #1e2133;
+    opacity: 0;
+    position: fixed;
+    z-index: 1;
     height: 70px;
     width: 100%;
-    position: fixed;
+    background-color: #1e2133;
+    font-family: 'Fairview Regular', serif;
 }
 header p {
     margin: 0px;
@@ -32,18 +35,18 @@ header p {
     font-size: 32px;
     color: white;
     font-weight: bold;
-    text-shadow: 1px 0px black, 0px 1px #1f1f1f,
-                 2px 1px black, 1px 2px #1f1f1f,
-                 3px 2px black, 2px 3px #1f1f1f,
-                 4px 3px black, 3px 4px #1f1f1f,
-                 5px 4px black, 4px 5px #1f1f1f,
-                 6px 5px black, 5px 6px #1f1f1f,
-                 7px 6px black, 6px 7px #1f1f1f,
-                 8px 7px black, 7px 8px #1f1f1f,
+    text-shadow: 1px 0px black, 0px 1px #101010,
+                 3px 2px black, 2px 3px #101010,
+                 4px 3px black, 3px 4px #101010,
+                 2px 1px black, 1px 2px #101010,
+                 5px 4px black, 4px 5px #101010,
+                 6px 5px black, 5px 6px #101010,
+                 7px 6px black, 6px 7px #101010,
+                 8px 7px black, 7px 8px #101010,
                  8px 8px black;
 }
 
-/* About Section 
+/* About Section
 ----------------------------- */
 .about {
     color: white;
@@ -113,7 +116,7 @@ header p {
 .contact-subtitle {
     color: steelblue;
     margin: 0;
-    
+
     font-size: 20px;
     font-style: italic;
     font-family: 'Open Sans', serif;
@@ -127,11 +130,11 @@ header p {
 /* Experiences Section
 ----------------------------- */
 .experiences {
-    margin: 0 170px 0 170px;
+    margin: 0 200px 0 200px;
     padding:   10px;
 }
 
-/* Experience Card 
+/* Experience Card
 ----------------------------- */
 .card {
     display:        flex;
@@ -146,7 +149,7 @@ header p {
 .card-image {
     flex-shrink:   0;
     border-radius: 35px;
-    
+
     width:  300px;
     height: 220px;
 
@@ -177,8 +180,8 @@ header p {
     font-size: 36px;
 }
 
-/* Line-On-Sides Header 
-(CSS Tricks customization) 
+/* Line-On-Sides Header
+(CSS Tricks customization)
 ----------------------------- */
 .fancy {
     line-height: 0;
@@ -194,7 +197,7 @@ header p {
     content: "";
     position: absolute;
     border-bottom: 2px solid white;
-    
+
     height: 5px;
     width: 80px;
 }
@@ -205,4 +208,27 @@ header p {
 .fancy span:after {
     left: 100%;
     margin-left: 15px;
+}
+
+/* Custom Menu
+----------------------------- */
+menu {
+    display: inline-block;
+    cursor: pointer;
+}
+menu div {
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+    background-color: white;
+}
+.change .menu-bar-1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .menu-bar-2 {
+    opacity: 0;
+}
+.change .menu-bar-3 {
+    transform: rotate(45deg) translate(-8px, -8px);
 }
