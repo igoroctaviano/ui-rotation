@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Igor Octaviano</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- JavaScript -->
+    <script href="js/index.js"></script>
+</head>
+<body>
+
+    <div class="wrap">
+
+        <aside id="right-menu">
+            <nav>
+                <a href="">Home</a>
+                <a href="">Work</a>
+                <a href="">Process</a>
+                <a href="">About</a>
+                <a href="">Blog</a>
+            </nav>
+        </aside>
+
+        <header class="header">
+            <h1 class="header-logo"><a href="http://www.igoroctaviano.com.br">IO</a></h1>
+            <div class="right-menu-toggle">
+                <label class="right-menu-toggle-label">Menu</label>
+                <div class="right-menu-toggle-btn" onclick="toggle(this)">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- <div class="home-loading"></div> -->
+
+            <div class="home">
+                <div class="home-banner-content">
+                    <div class="home-banner-header">
+                        <p>Igor Octaviano</p>
+                        <p>is a Software Developer & Dirty Bike Rider</p>
+                    </div>
+                    <button class="home-banner-btn">See my work</button>
+                </div>
+                <div class="home-banner-arrow">
+                    <svg version="1.1" class="home-banner-down-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 73.5 39.6" enable-background="new 0 0 73.5 39.6" xml:space="preserve">
+				        <polygon fill="#FFFFFF" points="36.8,39.6 0,2.8 2.8,0 36.8,33.9 70.7,0 73.5,2.8 "></polygon>
+		        	</svg>
+                </div>
+            </div>
+
+            <div class="teaser">
+                <a href="teaser-more">
+                    <div class="teaser-header">
+                        <p></p>
+                        <h2></h2>
+                        <div>
+                            <button></button>
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="claim">
+                <div class="claim-content">
+                    <h1 class="claim-title"></h1>
+                    <p class="claim-description"></p>
+                    <button class="claim-my-process-btn"></button>
+                    <button class="claim-my-work-btn"></button>
+                </div>
+            </div>
+
+            <div class="testimonials">
+
+            </div>
+
+            <div class="follow-me">
+
+            </div>
+        </main>
+
+        <footer>
+
+        </footer>
+
+        <script>
+            function toggle(btn) {
+                btn.classList.toggle("change");
+            }
+        </script>
+
+    </div>
+
+</body>
+</html>

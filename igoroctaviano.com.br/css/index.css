@@ -1,0 +1,81 @@
+* {
+    outline: none;
+}
+
+/* Header
+------------------------------- */
+.header {
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: 4.375rem;
+
+    float: left;
+    z-index: 100;
+    position: fixed;
+    padding-left: 25px;
+    background-color: #1e2133;
+}
+.header h1.header-logo {
+    font-size: 1.250em;
+    font-weight: 400;
+
+    margin: 0;
+    float: left;
+    color: #fff;
+    line-height: 4.375rem;
+}
+.header h1.header-logo a {
+    width: 69px;
+    height: 4.375rem;
+
+    overflow: hidden;
+    display: block;
+}
+
+/* Header Menu Toggle Button
+------------------------------- */
+.right-menu-toggle {
+    float: right;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.right-menu-toggle-label {
+    color: #fff;
+    float: left;
+    display: block;
+    line-height: 0.5rem;
+    padding-top: 1.850rem;
+    font-size: 0.750rem;
+}
+.right-menu-toggle-btn {
+    margin: 0;
+    height: 2px;
+    float: right;
+    cursor: pointer;
+    padding: 32px 25px 35px 18px;
+    background-color: transparent;
+}
+.bar-1, .bar-2, .bar-3 {
+    width: 35px;
+    height: 5px;
+
+    margin: 6px;
+    transition: 0.4s;
+    background-color: #333;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
