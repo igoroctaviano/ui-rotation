@@ -5,6 +5,7 @@
     <title>Igor Octaviano</title>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
 
     <!-- JavaScript -->
@@ -12,9 +13,9 @@
 </head>
 <body>
 
-    <div class="wrap">
+    <div id="wrap" class="wrap">
 
-        <aside id="right-menu">
+        <aside id="right-menu" class="right-menu">
             <nav>
                 <a href="">Home</a>
                 <a href="">Work</a>
@@ -22,16 +23,21 @@
                 <a href="">About</a>
                 <a href="">Blog</a>
             </nav>
+            <div class="right-menu-social">
+                <a href="www.twitter.com"></a>
+                <a href="www.linkdin.com"></a>
+                <a href=""></a>
+            </div>
         </aside>
 
         <header class="header">
             <h1 class="header-logo"><a href="http://www.igoroctaviano.com.br">IO</a></h1>
-            <div class="right-menu-toggle">
-                <label class="right-menu-toggle-label">Menu</label>
-                <div class="right-menu-toggle-btn" onclick="toggle(this)">
-                    <div class="bar-1"></div>
-                    <div class="bar-2"></div>
-                    <div class="bar-3"></div>
+            <div class="header-menu-toggle">
+                <label class="header-menu-toggle-label">Menu</label>
+                <div class="header-menu-toggle-btn" onclick="toggle(this)">
+                    <div class="line-1 line"></div>
+                    <div class="line-2 line"></div>
+                    <div class="line-3 line"></div>
                 </div>
             </div>
         </header>
@@ -54,9 +60,9 @@
                 </div>
             </div>
 
-            <div class="teaser">
-                <a href="teaser-more">
-                    <div class="teaser-header">
+            <div class="portifolio">
+                <a href="portifolio-more">
+                    <div class="portifolio-header">
                         <p></p>
                         <h2></h2>
                         <div>
@@ -92,6 +98,7 @@
         <script>
             function toggle(btn) {
                 btn.classList.toggle("change");
+                document.getElementById("wrap").classList.toggle("move-left");
             }
         </script>
 

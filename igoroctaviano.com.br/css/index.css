@@ -1,5 +1,17 @@
+/* Fonts
+------------------------------- */
+@font-face {
+    font-family: Kievit;
+    src: url(kievit-regular.woff);
+}
+
 * {
     outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Kievit, sans;
 }
 
 /* Header
@@ -32,17 +44,21 @@
 
     overflow: hidden;
     display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;;
 }
 
 /* Header Menu Toggle Button
 ------------------------------- */
-.right-menu-toggle {
+.header-menu-toggle {
     float: right;
     color: #fff;
+    letter-spacing: 0.1em;
     font-weight: 700;
     text-transform: uppercase;
 }
-.right-menu-toggle-label {
+.header-menu-toggle-label {
     color: #fff;
     float: left;
     display: block;
@@ -50,32 +66,58 @@
     padding-top: 1.850rem;
     font-size: 0.750rem;
 }
-.right-menu-toggle-btn {
+.header-menu-toggle-btn {
     margin: 0;
     height: 2px;
     float: right;
     cursor: pointer;
-    padding: 32px 25px 35px 18px;
+    padding: 22px 25px 35px 18px;
     background-color: transparent;
 }
-.bar-1, .bar-2, .bar-3 {
-    width: 35px;
-    height: 5px;
+.line-1, .line-2, .line-3 {
+    width: 1.375rem;
+    height: 0.125rem;
 
-    margin: 6px;
-    transition: 0.4s;
-    background-color: #333;
+    margin: 4px;
+    transition: 0.3s;
+    background: #fff;
 }
-.change .bar1 {
+.change .line-1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
 }
-.change .bar2 {
+.change .line-2 {
     opacity: 0;
 }
-.change .bar3 {
+.change .line-3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
+/* Right Menu Toggle
+------------------------------- */
+.right-menu {
+    position: fixed;
+    right: -15.625rem;
+    color: #fff;
+    width: 15.625rem;
 
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background: #333333;
+    background-color: #0baf85;
+
+    z-index: 1001;
+    box-sizing: content-box;
+
+    transition: transform 500ms ease 0s;
+    transform: translate3d(100%, 0, 0);
+}
+.move-left {
+
+}
