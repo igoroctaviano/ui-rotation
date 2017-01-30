@@ -14,8 +14,12 @@ html {
     box-sizing: inherit;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
-    font-family: Kievit, sans;
+    font-family: "Kievit", sans-serif;
 }
 
 /* Header
@@ -48,7 +52,6 @@ body {
 
     overflow: hidden;
     display: block;
-    text-decoration: none;
     font-weight: bold;
     color: #fff;;
 }
@@ -103,7 +106,6 @@ body {
 .right-menu {
     position: fixed;
     right: -15.625rem;
-    color: #fff;
     width: 15.625rem;
 
     top: 0;
@@ -117,11 +119,109 @@ body {
     background-color: #0baf85;
 
     z-index: 999;
-    box-sizing: content-box;    
-
-    transition: transform 500ms ease 0s;
+    box-sizing: content-box;
     transform: translateX(100%);
 }
+.right-menu nav ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+.right-menu nav ul li a {
+    font-size: 2.250em;
+    color: #fff;
+    font-weight: 300;
+}
 .move-left {
-    transform: translateX(-20%);
+    transform: translate(-15.625rem, 0);
+    transition: transform 500ms ease 0s;
+}
+
+/* Home Banner
+------------------------------- */
+.home-banner {
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    float: left;
+    height:100vh;
+    overflow: hidden;
+    text-align: center;
+    padding: 5.625em 0 7.625em;
+
+    background-color: #1e2133;
+    background-attachment: fixed;
+}
+.home-banner-content {
+    position: absolute;
+    top: 261.5px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2.125em;
+    z-index: 1;
+}
+.home-banner-header {
+    color: white;
+}
+.home-banner-header h1 {
+    font-weight: normal;
+    font-size: 4.375em;
+}
+.home-banner-header p {
+    margin-bottom: 2rem;
+    font-size: 1.375em;
+}
+.home-banner-btn {
+    font-family: inherit;
+    background-color: transparent;
+}
+.home-banner-arrow {
+    position: absolute;
+    bottom: 1.875em;
+    left: 0;
+    width: 100%;
+}
+.home-banner-down-arrow {
+    width: 2.688em;
+    height: 1.438em;
+    cursor: pointer;
+}
+
+/* Claim
+------------------------------- */
+.row {
+    margin: 0 auto auto 0;
+
+    width: 100%;
+
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+}
+.padded {
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+.claim {
+    text-align: center;
+}
+.claim-my-process-btn {
+    background-color: #078565;
+}
+.claim-my-work-btn {
+    background-color: #d87044;
+}
+
+.btn {
+    text-transform: uppercase;
+    text-align: center;
+
+    font-size: 0.875em;
+    font-weight: 700;
+
+    padding: 1.125rem 1.5rem;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    color: #fff;
+    display: inline-block;
 }
