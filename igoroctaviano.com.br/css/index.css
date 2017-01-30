@@ -2,7 +2,7 @@
 ------------------------------- */
 @font-face {
     font-family: Kievit;
-    src: url(kievit-regular.woff);
+    src: url(../fonts/kievit-regular.woff);
 }
 
 html {

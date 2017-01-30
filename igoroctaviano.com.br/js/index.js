@@ -1,3 +1,4 @@
-/**
- * Created by iocta on 26/01/17.
- */
+function toggle(btn) {
+    btn.classList.toggle("change");
+    document.getElementById("wrapper").classList.toggle("move-left");
+}
