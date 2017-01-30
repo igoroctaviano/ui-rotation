@@ -1,5 +1,9 @@
 function toggle(btn) {
     btn.classList.toggle("change");
-    document.getElementById("wrapper")
-        .classList.toggle("move-left");
+
+    var wrapperClasses = document
+        .getElementById("wrapper")
+        .classList;
+
+    wrapperClasses.toggle('move-left');
 }
