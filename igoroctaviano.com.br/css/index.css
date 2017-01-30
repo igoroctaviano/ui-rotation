@@ -5,9 +5,13 @@
     src: url(kievit-regular.woff);
 }
 
-* {
-    outline: none;
+html {
     box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    outline: none;
+    box-sizing: inherit;
 }
 
 body {
@@ -82,16 +86,16 @@ body {
     transition: 0.3s;
     background: #fff;
 }
-.change .line-1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+.change .line-1 { /* Tilt the top line */
+    -webkit-transform: rotate(-45deg) translate(-3px, 0px);
+    transform: rotate(-45deg) translate(-3px, 0px);
 }
-.change .line-2 {
+.change .line-2 { /* Hide the middle line */
     opacity: 0;
 }
-.change .line-3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+.change .line-3 { /* Tilt the bottom line */
+    -webkit-transform: rotate(42deg) translate(-7px, -7px);
+    transform: rotate(42deg) translate(-7px, -7px);
 }
 
 /* Right Menu Toggle
@@ -112,12 +116,12 @@ body {
     background: #333333;
     background-color: #0baf85;
 
-    z-index: 1001;
-    box-sizing: content-box;
+    z-index: 999;
+    box-sizing: content-box;    
 
     transition: transform 500ms ease 0s;
-    transform: translate3d(100%, 0, 0);
+    transform: translateX(100%);
 }
 .move-left {
-
+    transform: translateX(-20%);
 }
