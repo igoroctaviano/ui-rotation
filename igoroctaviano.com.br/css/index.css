@@ -26,13 +26,6 @@ h1 {
     font-size: 3em;
     font-weight: 300;
 }
-p {
-    font-weight: normal;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1.25rem;
-    text-rendering: optimizeLegibility;
-}
 p, li {
     color: #666666;
 }
@@ -155,11 +148,26 @@ p, li {
     font-size:   2.250em;
     font-weight: 300;
 }
+#right-menu .social-container {
+    text-align: left;
+    margin-top:   2.000rem;
+    padding-left: 3.125rem;
+}
+#right-menu .social-container a {
+    display: inline-block;
+    margin: 0 1.00rem 0 0;
+}
+#right-menu .social-container svg {
+    width:  1.750em;
+    height: 1.400em;
+}
 .move-left {
-    position: fixed;
 
     transform:  translate3d(-15.625rem, 0, 0);
     transition: transform 500ms ease 0s;
+}
+.fixed {
+    position: fixed;
 }
 
 /* Home Banner
@@ -419,6 +427,7 @@ footer {
 footer h5 {
     font-size: 1.375em;
     font-weight: 400;
+
     margin-bottom: 2.000rem;
 }
 footer p {
