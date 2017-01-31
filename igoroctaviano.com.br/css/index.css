@@ -5,24 +5,40 @@
     src: url(../fonts/kievit-regular.woff);
 }
 
+/* HTML
+------------------------------- */
 *, *:before, *:after {
     outline:    none;
     box-sizing: inherit;
 }
-
 html {
+    line-height: 1.15;
     box-sizing: border-box;
 }
-
 a {
     text-decoration: none;
 }
-
 body {
     /* overflow: hidden; */
     font-family: "Kievit", sans-serif;
 }
+h1 {
+    font-size: 3em;
+    font-weight: 300;
+}
+p {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    text-rendering: optimizeLegibility;
+}
+p, li {
+    color: #666666;
+}
 
+/* Content Wrappers
+------------------------------- */
 .wrapper {
     height: 100%;
     width:  100%;
@@ -152,8 +168,8 @@ body {
     top:  0;
     left: 0;
 
-    width: 100%;
-    height:100vh;
+    width:  100%;
+    height: 100vh;
 
     margin:  0;
     z-index: 10;
@@ -177,21 +193,30 @@ body {
 }
 .home-banner-header h1 {
     font-weight: normal;
-    font-size:   4.375em;
+    font-size: 4.375em;
 
+    margin-bottom: 0;
     text-transform: uppercase;
 }
 .home-banner-header p {
+    color: white;
+    font-size: 1.375em;
+
+    margin-top:  0.7rem;
     margin-bottom: 2rem;
-    font-size:  1.375em;
 }
 .home-banner-btn {
-    font-family: inherit;
+    border-color: white;
     background-color: #1e2133;
+}
+.home-banner-btn:hover {
+    background-color: white;
+    color: #1e2133;
+    border: 0;
 }
 .home-banner-arrow {
     position: absolute;
-    width:    100%;
+    width: 100%;
 
     left:   0;
     bottom: 3.875em;
@@ -208,28 +233,60 @@ body {
 .claim {
     text-align: center;
 }
+.claim p {
+    margin-bottom: 2rem;
+    font-size:  1.250em;
+    line-height: 1.6;
+}
+.claim h1 {
+    font-weight: 300;
+}
+.claim .btn {
+    margin-right: 0.7rem;
+}
 .claim-my-process-btn {
+    background-color: #0BAF85;
+}
+.claim-my-process-btn:hover {
     background-color: #078565;
 }
 .claim-my-work-btn {
     background-color: #d87044;
 }
+.claim-my-work-btn:hover {
+    background-color: #B25933;
+}
+.borderless {
+    border: 0;
+}
 
 /* Content Space
 ------------------------------- */
 .row {
-    margin: 0 auto auto 0;
-    width:  100%;
-
     padding-left:  1.875rem;
     padding-right: 1.875rem;
+
+    width: 100%;
+    max-width: 75rem;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+.row:after {
+    clear: both;
 }
 .padded {
     padding-top:    6em;
     padding-bottom: 6em;
 }
 
-/* Custom Button
+/* Customized Button
 ------------------------------- */
 .btn {
     text-transform: uppercase;
@@ -237,10 +294,157 @@ body {
 
     font-size:   0.875em;
     font-weight: 700;
+    font-family: inherit;
 
     color: #fff;
     line-height: 1;
     letter-spacing:    0.1em;
     padding: 1.125rem 1.5rem;
     display: inline-block;
+}
+
+/* Testimonials
+------------------------------- */
+.testimonials {
+    color: white;
+    background-color: #998d65;
+}
+.testimonials h1 {
+    font-size:   1.25em;
+    font-weight: 700;
+
+    text-align:     center;
+    text-transform: uppercase;
+
+    letter-spacing:  0.1em;
+    margin-bottom: 3.125em;
+}
+.testimonial {
+    float:      left;
+    text-align: left;
+    padding: 0 13% 68px 137px;
+}
+.testimonial p, h6 {
+    color: white;
+}
+.testimonial p {
+    font-size:    1.375em;
+    line-height: 1.750rem;
+}
+.testimonial h6 {
+    font-weight:  700;
+    font-size:    0.750em;
+
+    line-height:     1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Follow me!
+------------------------------- */
+.follow-me {
+    text-align: center;
+    background-color: #0baf85;
+}
+.follow-me p {
+    margin-bottom: 1.5em;
+    font-size:   1.125em;
+    line-height: 1.375;
+    color: white;
+}
+.follow-me .widget {
+    width: 33.3333333333%;
+    padding: 0 2.2%;
+    float: left;
+
+    margin-left:  0;
+    margin-right: 0;
+}
+.follow-me .label {
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.1em;
+    font-weight:    700;
+    text-transform: uppercase;
+}
+.follow-me .widget {
+    margin: 0;
+}
+.follow-me .follow a {
+    background-color: #089d77;
+    padding: 0.8rem 1.250rem;
+    line-height:    1.438rem;
+    text-align: left;
+}
+.follow-me .subscribe-label {
+    margin-bottom: 0.75em;
+}
+.follow-me .subscribe form {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 0.9rem;
+}
+.follow-me .subscribe form input[type="email"] {
+    float: left;
+    width: 70%;
+    margin: 0;
+    border: 0;
+    box-shadow: none;
+    height: 2.875rem;
+}
+.follow-me .subscribe form input[type="submit"] {
+    width:  30%;
+    height: 2.875rem;
+
+    float: right;
+    margin: 0;
+    border: 0;
+    background-color: #089d77;
+}
+.follow-me .mail a {
+    background-color: #089d77;
+}
+.follow-me .sub {
+    font-size:   0.875em;
+    line-height: 1.250em;
+    text-align: center;
+}
+
+/* Footer
+------------------------------- */
+footer {
+    color:      white;
+    text-align: center;
+    background-color: #1e2133;
+}
+footer h5 {
+    font-size: 1.375em;
+    font-weight: 400;
+    margin-bottom: 2.000rem;
+}
+footer p {
+    color: white;
+    font-size: 1.125em;
+}
+footer a svg {
+    width:  1.750em;
+    height: 1.400em;
+}
+footer .social-container {
+    margin-top: 2.000rem;
+}
+footer .social-container a {
+    display: inline-block;
+    margin: 0 0.500rem;
+}
+
+/* Colors
+------------------------------- */
+.green {
+    background-color: #0baf85;
+}
+.blue {
+    background-color: #1e2133
+}
+.gold {
+    background-color: #998d65;
 }
