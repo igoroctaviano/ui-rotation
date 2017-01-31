@@ -311,6 +311,10 @@ p, li {
     color: white;
     background-color: #998d65;
 }
+.testimonials .row {
+    display: flex;
+    flex-direction: row;
+}
 .testimonials h1 {
     font-size:   1.25em;
     font-weight: 700;
@@ -322,9 +326,18 @@ p, li {
     margin-bottom: 3.125em;
 }
 .testimonial {
-    float:      left;
     text-align: left;
-    padding: 0 13% 68px 137px;
+    padding: 0 20px 20px 20x;
+}
+.testimonials img {
+    width: 120px;
+    height: 120px;
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 1000px;
+    background-color: #089d77;
 }
 .testimonial p, h6 {
     color: white;
@@ -348,6 +361,10 @@ p, li {
     text-align: center;
     background-color: #0baf85;
 }
+.follow-me .row {
+    display: flex;
+    flex-direction: row;
+}
 .follow-me p {
     margin-bottom: 1.5em;
     font-size:   1.125em;
@@ -357,7 +374,6 @@ p, li {
 .follow-me .widget {
     width: 33.3333333333%;
     padding: 0 2.2%;
-    float: left;
 
     margin-left:  0;
     margin-right: 0;
