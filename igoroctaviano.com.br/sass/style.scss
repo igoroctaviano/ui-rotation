@@ -1,0 +1,600 @@
+/* Colors
+------------------------------- */
+$red:          #d87044;
+$red-dark:     #B25933;
+$gold:         #998d65;
+$blue:         #1e2133;
+$white:        #fff;
+$green:        #0baf85;
+$green-dark:   #089d77;
+$green-darker: #078565;
+
+/* Fonts
+------------------------------- */
+@font-face {
+  font-family: Kievit;
+  src: url(../fonts/kievit-regular.woff);
+}
+$font: 'Kievit', sans-serif;
+
+/* Transitions */
+$smooth: transform 500ms ease 0s;
+
+/* HTML
+------------------------------- */
+*, *:before, *:after {
+  outline:    none;
+  box-sizing: inherit;
+}
+html {
+  line-height: 1.15;
+  box-sizing: border-box;
+
+  body {
+    font-family: "Kievit", sans-serif;
+
+    a {
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 3em;
+      font-weight: 300;
+    }
+    p, li {
+      color: #666666;
+    }
+  }
+}
+
+/* Content Wrappers
+------------------------------- */
+.wrapper {
+  height: 100%;
+  width:  100%;
+  position: relative;
+
+  .inner-wrapper {
+    transition: $smooth;
+  }
+}
+
+/* Header
+------------------------------- */
+header.header {
+  top:  0px;
+  left: 0px;
+
+  width:  100%;
+  height: 4.375rem;
+
+  float:    left;
+  position: fixed;
+  z-index:      100;
+  padding-left: 25px;
+  background-color: $blue;
+  transition: $smooth;
+
+  h1.header-logo {
+    font-size:   1.250em;
+    font-weight: 400;
+
+    float: left;
+    color: $white;
+    margin:      0;
+    line-height: 4.375rem;
+
+    a {
+      width:     69px;
+      height: 4.375rem;
+
+      overflow:    hidden;
+      display:     block;
+      font-weight: bold;
+      color: $white;
+    }
+  }
+}
+
+/* Header Menu Toggle Button
+------------------------------- */
+.header-menu-toggle {
+  color: $white;
+  font-weight:    700;
+  letter-spacing: 0.1em;
+  float:          right;
+  text-transform: uppercase;
+
+  .header-menu-toggle-label {
+    float:   left;
+    display: block;
+    font-size:   0.750rem;
+    line-height:   0.5rem;
+    padding-top: 1.850rem;
+  }
+  .header-menu-toggle-btn {
+    margin: 0;
+    height: 2px;
+    float:  right;
+    cursor: pointer;
+    padding: 22px 25px 35px 18px;
+    background-color: transparent;
+
+    .line-1, .line-2, .line-3 {
+      width:  1.375rem;
+      height: 0.125rem;
+
+      margin:      4px;
+      transition: 0.3s;
+      background: $white;
+    }
+    .change {
+      .line-1 { /* Tilt the top line */
+        -webkit-transform: rotate(-45deg) translate(-3px, 0px);
+        transform: rotate(-45deg) translate(-3px, 0px);
+      }
+      .line-2 { /* Hide the middle line */
+        opacity: 0;
+      }
+      .line-3 { /* Tilt the bottom line */
+        -webkit-transform: rotate(42deg) translate(-7px, -7px);
+        transform: rotate(42deg) translate(-7px, -7px);
+      }
+    }
+  }
+}
+
+/* Right Menu Toggle
+------------------------------- */
+#right-menu {
+  top:    0;
+  bottom: 0;
+  right: -15.625rem;
+
+  color: $white;
+  z-index: 999;
+  width:   15.625rem;
+  position:  fixed;
+
+  transform: none;
+  transition: $smooth;
+
+  background: #333333;
+  background-color: #0baf85;
+
+  nav ul {
+    margin-top:   2.750rem;
+    margin-left:  1.125rem;
+    margin-bottom: 1.25rem;
+
+    line-height:      1.6;
+    font-size:        1rem;
+    list-style-type:  none;
+
+    li {
+      a {
+        color: $white;
+
+        font-size: 2.250em;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .social-container {
+    text-align: left;
+    margin-top:   2.000rem;
+    padding-left: 3.125rem;
+
+    a {
+      display: inline-block;
+      margin: 0 1.00rem 0 0;
+    }
+    svg {
+      width:  1.750em;
+      height: 1.400em;
+    }
+  }
+}
+.move-left {
+  header.header, #right-menu, .inner-wrapper {
+    transform: translate3d(-15.625rem, 0, 0);
+  }
+}
+
+/* Home Banner
+------------------------------- */
+.home-banner {
+  top:  0;
+  left: 0;
+
+  width:  100%;
+  height: 100vh;
+
+  margin:  0;
+  z-index: 10;
+  padding: 5.625em 0 7.625em;
+
+  color:      $white;
+  float:      left;
+  overflow:   hidden;
+  text-align: center;
+  position:   relative;
+
+  background-color:      $blue;
+  background-attachment: fixed;
+
+  .home-banner-content {
+    width:    100%;
+    margin:   0 auto;
+    padding:  0 2.125em;
+    z-index:  1;
+    position: absolute;
+  }
+}
+.home-banner-header {
+  h1 {
+    font-weight: normal;
+    font-size: 4.375em;
+
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+  p {
+    color: $white;
+    font-size: 1.375em;
+
+    margin-top:  0.7rem;
+    margin-bottom: 2rem;
+  }
+}
+.home-banner-btn {
+  border-color: $white;
+  background-color: $blue;
+}
+.home-banner-btn:hover {
+  background-color: $white;
+  color: #1e2133;
+  border: 0;
+}
+.home-banner-arrow {
+  position: absolute;
+  width: 100%;
+
+  left:   0;
+  bottom: 3.875em;
+}
+.home-banner-down-arrow {
+  width:  2.688em;
+  height: 1.438em;
+
+  cursor: pointer;
+}
+
+/* Claim
+------------------------------- */
+.claim {
+  text-align: center;
+
+  p {
+    margin-bottom: 2rem;
+    font-size:  1.250em;
+    line-height: 1.6;
+  }
+  h1 {
+    font-weight: 300;
+  }
+
+  .btn {
+    margin-right: 0.7rem;
+  }
+  .claim-my-process-btn {
+    background-color: $green;
+  }
+  .claim-my-process-btn:hover {
+    background-color: $green-darker;
+  }
+  .claim-my-work-btn {
+    background-color: $red;
+  }
+  .claim-my-work-btn:hover {
+    background-color: $red-dark;
+  }
+}
+.borderless {
+  border: 0;
+}
+
+/* Content Space
+------------------------------- */
+.row {
+  padding-left:  1.875rem;
+  padding-right: 1.875rem;
+
+  width: 100%;
+  max-width: 75rem;
+
+  margin-left:  auto;
+  margin-right: auto;
+  margin-top:    0;
+  margin-bottom: 0;
+
+  :before, :after {
+    content: " ";
+    display: table;
+  }
+  :after {
+    clear: both;
+  }
+}
+.padded {
+  padding-top:    6em;
+  padding-bottom: 6em;
+}
+
+/* Customized Button
+------------------------------- */
+.btn {
+  text-transform: uppercase;
+  text-align:     center;
+
+  font-size:   0.875em;
+  font-weight: 700;
+  font-family: inherit;
+
+  color: #fff;
+  line-height: 1;
+  letter-spacing:    0.1em;
+  padding: 1.125rem 1.5rem;
+  display: inline-block;
+}
+
+/* Testimonials
+------------------------------- */
+.testimonials {
+  color: $white;
+  background-color: $gold;
+
+  padding-top:    6em;
+  padding-bottom: 2em;
+
+  img {
+    top:  0;
+    left: 0;
+
+    width:  120px;
+    height: 120px;
+
+    float: left;
+    border-radius:    1000px;
+    background-color: $green-dark;
+  }
+  h1 {
+    font-size:   1.25em;
+    font-weight: 700;
+
+    text-align:     center;
+    text-transform: uppercase;
+
+    letter-spacing:  0.1em;
+
+    margin-bottom: 3.125em;
+    margin-top: 0;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  .testimonial {
+    text-align: left;
+    position:   relative;
+    padding: 0 0 68px;
+
+    img {
+      position: absolute;
+    }
+    p, h6 {
+      color: $white;
+    }
+    p {
+      margin: 0;
+      font-size:   1.375em;
+      line-height: 1.750rem;
+    }
+    h6 {
+      font-weight:  700;
+      font-size:    0.750em;
+
+      line-height:     1rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/* Follow me!
+------------------------------- */
+.follow-me {
+  text-align: center;
+  background-color: $green;
+
+  p {
+    margin-bottom: 1.5em;
+    font-size:   1.125em;
+    line-height: 1.375;
+    color: $white;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  .widget {
+    width: 33.3333333333%;
+    padding: 0 2.2%;
+    margin: 0;
+
+    margin-left:  0;
+    margin-right: 0;
+  }
+  .label {
+    margin-bottom:  0.4rem;
+    letter-spacing: 0.1em;
+    font-weight:    700;
+    text-transform: uppercase;
+  }
+  .follow {
+    a {
+      background-color: $green-dark;
+      padding: 0.8rem 1.250rem;
+      line-height:    1.438rem;
+      text-align: left;
+    }
+  }
+  .sub {
+    font-size:   0.875em;
+    line-height: 1.250em;
+    text-align: center;
+  }
+  .mail {
+    a {
+      background-color: $green-dark;
+    }
+  }
+  .subscribe {
+    form {
+      width: 100%;
+      display: inline-block;
+      margin-bottom: 0.9rem;
+
+      input[type="email"] {
+        float: left;
+        width: 70%;
+        margin: 0;
+        border: 0;
+        box-shadow: none;
+        height: 2.875rem;
+      }
+      input[type="submit"] {
+        width:  30%;
+        height: 2.875rem;
+
+        float: right;
+        margin: 0;
+        border: 0;
+        background-color: $green-dark;
+      }
+    }
+  }
+}
+
+/* Footer
+------------------------------- */
+footer {
+  color:            $white;
+  background-color: $blue;
+  text-align: center;
+
+  .row {
+    h5 {
+      font-size:   1.375em;
+      font-weight: 400;
+
+      margin-bottom: 2.000rem;
+    }
+    p {
+      color: $white;
+      font-size: 1.125em;
+    }
+    a {
+      svg {
+        width: 1.750em;
+        height: 1.400em;
+      }
+    }
+
+    .social-container {
+      margin-top: 2.000rem;
+
+      a {
+        display: inline-block;
+        margin: 0 0.500rem;
+      }
+    }
+  }
+}
+
+/* Media Queries
+------------------------------- */
+@media only screen and (max-width: 1000px) {
+  .home-banner-header h1 {
+    font-size: 3.375em
+  }
+
+  .testimonials {
+    .row {
+      flex-direction: column;
+
+      p, h6 {
+        text-align: center;
+      }
+    }
+  }
+
+  .claim {
+    p {
+      font-size: 1.100em;
+    }
+    h1 {
+      font-size:  2.350em;
+    }
+  }
+
+  .follow-me {
+    .row {
+      flex-direction: column;
+    }
+    .widget {
+      width: inherit;
+      margin-bottom: 2.500em;
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .testimonials .testimonial {
+    padding: 0 7% 38px 137px;
+  }
+}
+
+@media only screen and (min-width: 1060px) and (max-width: 1600px) {
+  .testimonials .testimonial {
+    padding: 0 5% 68px 137px;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1060px) {
+  .testimonials .testimonial {
+    padding: 0 0 68px 137px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .testimonial img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .home-banner-header {
+    h1 {
+      font-size: 2.375em
+    }
+    p {
+      font-size: 1.075em
+    }
+  }
+  .claim .btn {
+    margin: 10px;
+  }
+}
