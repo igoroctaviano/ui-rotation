@@ -36,10 +36,13 @@ p, li {
     width:  100%;
     position: relative;
 }
+.inner-wrapper {
+    transition: transform 500ms ease 0s;
+}
 
 /* Header
 ------------------------------- */
-.header {
+header.header {
     top:  0px;
     left: 0px;
 
@@ -51,6 +54,7 @@ p, li {
     z-index:      100;
     padding-left: 25px;
     background-color: #1e2133;
+    transition: transform 500ms ease 0s;
 }
 .header h1.header-logo {
     font-size:   1.250em;
@@ -126,7 +130,9 @@ p, li {
     z-index: 999;
     width:   15.625rem;
     position:  fixed;
+
     transform: none;
+    transition: transform 500ms ease 0s;
 
     background: #333333;
     background-color: #0baf85;
@@ -540,5 +546,9 @@ footer .social-container a {
     }
     .home-banner-header p {
         font-size: 1.075em
+    }
+
+    .claim .btn {
+        margin: 10px;
     }
 }
