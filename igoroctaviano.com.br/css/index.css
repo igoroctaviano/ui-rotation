@@ -271,9 +271,9 @@ p, li {
     width: 100%;
     max-width: 75rem;
 
-    margin-left: auto;
+    margin-left:  auto;
     margin-right: auto;
-    margin-top: 0;
+    margin-top:    0;
     margin-bottom: 0;
 }
 .row:before, .row:after {
@@ -323,26 +323,38 @@ p, li {
     text-transform: uppercase;
 
     letter-spacing:  0.1em;
+
     margin-bottom: 3.125em;
+    margin-top: 0;
 }
-.testimonial {
+.testimonials .testimonial {
     text-align: left;
-    padding: 0 20px 20px 20x;
+    position: relative;
+    padding: 0 0 68px;
+}
+.testimonials {
+    padding-top: 6em;
+    padding-bottom: 2em;
+}
+.testimonial img {
+    position: absolute;
 }
 .testimonials img {
-    width: 120px;
-    height: 120px;
-    float: left;
-    position: relative;
-    top: 0;
+    top:  0;
     left: 0;
-    border-radius: 1000px;
+
+    width:  120px;
+    height: 120px;
+
+    float:    left;
+    border-radius:    1000px;
     background-color: #089d77;
 }
 .testimonial p, h6 {
     color: white;
 }
 .testimonial p {
+    margin: 0;
     font-size:    1.375em;
     line-height: 1.750rem;
 }
@@ -470,8 +482,63 @@ footer .social-container a {
 
 /* Media Queries
 ------------------------------- */
-@media (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .home-banner-header h1 {
-        font-size: 3.375em;
+        font-size: 3.375em
+    }
+
+    .testimonials .row {
+        flex-direction: column;
+    }
+    .testimonials .row p, .testimonials .row h6 {
+        text-align: center;
+    }
+
+    .claim p {
+        font-size:  1.100em;
+    }
+    .claim h1 {
+        font-size:  2.350em;
+    }
+
+    .follow-me .row {
+        flex-direction: column;
+    }
+    .follow-me .widget {
+        width: inherit;
+        margin-bottom: 2.500em;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .testimonials .testimonial {
+        padding: 0 7% 38px 137px;
+    }
+}
+
+@media only screen and (min-width: 1060px) and (max-width: 1600px) {
+    .testimonials .testimonial {
+        padding: 0 5% 68px 137px;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1060px) {
+    .testimonials .testimonial {
+        padding: 0 0 68px 137px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .testimonial img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .home-banner-header h1 {
+        font-size: 2.375em
+    }
+    .home-banner-header p {
+        font-size: 1.075em
     }
 }
