@@ -467,3 +467,11 @@ footer .social-container a {
 .gold {
     background-color: #998d65;
 }
+
+/* Media Queries
+------------------------------- */
+@media (max-width: 600px) {
+    .home-banner-header h1 {
+        font-size: 3.375em;
+    }
+}
