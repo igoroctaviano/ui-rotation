@@ -1,12 +1,13 @@
 /* Colors
 ------------------------------- */
+/* Fonts */
+/* Transitions */
 /* Fonts
 ------------------------------- */
 @font-face {
   font-family: Kievit;
   src: url(../fonts/kievit-regular.woff); }
 
-/* Transitions */
 /* HTML
 ------------------------------- */
 *, *:before, *:after {
