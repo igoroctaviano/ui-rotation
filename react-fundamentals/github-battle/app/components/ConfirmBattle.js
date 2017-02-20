@@ -1,8 +1,14 @@
 var React = require('react');
 
+function puke() {
+
+};
+
 function ConfirmBattle(props) {
   return (
-    props.isLoading === true ? <p> Loading... </p> : <p> Confirm Battle! </p>
+    props.isLoading === true
+      ? <p> Loading... </p>
+      : <p> Confirm Battle! </p>
   );
 }
 
