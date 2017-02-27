@@ -114,18 +114,18 @@ header.header {
       transition: 0.3s;
       background: $white;
     }
-    .change {
-      .line-1 { /* Tilt the top line */
-        -webkit-transform: rotate(-45deg) translate(-3px, 0px);
-        transform: rotate(-45deg) translate(-3px, 0px);
-      }
-      .line-2 { /* Hide the middle line */
-        opacity: 0;
-      }
-      .line-3 { /* Tilt the bottom line */
-        -webkit-transform: rotate(42deg) translate(-7px, -7px);
-        transform: rotate(42deg) translate(-7px, -7px);
-      }
+  }
+  .change {
+    .line-1 { /* Tilt the top line */
+      -webkit-transform: rotate(-45deg) translate(-3px, 0px);
+      transform: rotate(-45deg) translate(-3px, 0px);
+    }
+    .line-2 { /* Hide the middle line */
+      opacity: 0;
+    }
+    .line-3 { /* Tilt the bottom line */
+      -webkit-transform: rotate(42deg) translate(-7px, -7px);
+      transform: rotate(42deg) translate(-7px, -7px);
     }
   }
 }

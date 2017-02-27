@@ -91,17 +91,17 @@ header.header {
       margin: 4px;
       transition: 0.3s;
       background: #fff; }
-    .header-menu-toggle .header-menu-toggle-btn .change .line-1 {
-      /* Tilt the top line */
-      -webkit-transform: rotate(-45deg) translate(-3px, 0px);
-      transform: rotate(-45deg) translate(-3px, 0px); }
-    .header-menu-toggle .header-menu-toggle-btn .change .line-2 {
-      /* Hide the middle line */
-      opacity: 0; }
-    .header-menu-toggle .header-menu-toggle-btn .change .line-3 {
-      /* Tilt the bottom line */
-      -webkit-transform: rotate(42deg) translate(-7px, -7px);
-      transform: rotate(42deg) translate(-7px, -7px); }
+  .header-menu-toggle .change .line-1 {
+    /* Tilt the top line */
+    -webkit-transform: rotate(-45deg) translate(-3px, 0px);
+    transform: rotate(-45deg) translate(-3px, 0px); }
+  .header-menu-toggle .change .line-2 {
+    /* Hide the middle line */
+    opacity: 0; }
+  .header-menu-toggle .change .line-3 {
+    /* Tilt the bottom line */
+    -webkit-transform: rotate(42deg) translate(-7px, -7px);
+    transform: rotate(42deg) translate(-7px, -7px); }
 
 /* Right Menu Toggle
 ------------------------------- */
