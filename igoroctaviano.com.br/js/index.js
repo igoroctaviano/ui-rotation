@@ -7,6 +7,6 @@ function toggle(btn) {
 
     wrapperClasses.toggle('move-left');
 
-    document.getElementsById('right-menu')
+    document.getElementById('right-menu')
         .classList.add('fixed');
 }
