@@ -1,0 +1,22 @@
+{
+  "name": "igoroctaviano",
+  "version": "1.0.0",
+  "description": "Simpson Node Course",
+  "main": "4.js",
+  "keywords": [
+    "igor",
+    "octaviano"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Igor Octaviano <igoroctaviano@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "asynquence": "^0.10.0",
+    "asynquence-contrib": "^0.28.0",
+    "minimist": "^1.2.0",
+    "node-static": "^0.7.10",
+    "socket.io": "^2.0.3"
+  }
+}
